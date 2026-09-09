@@ -145,6 +145,174 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Display_Graphic:ER_OLEDM0.91_1x-I2C"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ER_OLEDM0.91_1x-I2C"
+				(at 14.224 -10.668 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Display:ER_OLEDM0.91_1x-I2C"
+				(at 18.034 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.buydisplay.com/download/manual/ER-OLEDM0.91-1_Datasheet.pdf"
+				(at 42.672 -14.732 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "SSD1306 OLED module, 0.91 inch, 128x32, I2C"
+				(at 26.67 -16.764 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "EastRising"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "ER?OLEDM0.91?1x?I2C*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ER_OLEDM0.91_1x-I2C_1_1"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "RF_Module:ESP32-WROOM-32"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1473,6 +1641,12 @@
 		(uuid "885c4ab2-849f-4c8f-8c31-ce9db3321ede")
 	)
 	(junction
+		(at 222.25 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "943eeb17-7a54-49da-98d1-7c825e02dd61")
+	)
+	(junction
 		(at 229.87 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1483,6 +1657,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b9275b6b-0080-47af-a9f9-73b051fdef02")
+	)
+	(junction
+		(at 210.82 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9580a6c-6dec-41bf-b25d-e4152c0c2700")
 	)
 	(junction
 		(at 195.58 67.31)
@@ -1508,7 +1688,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 80.01) (xy 166.37 80.01)
+			(xy 222.25 80.01) (xy 210.82 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1525,6 +1705,16 @@
 			(type default)
 		)
 		(uuid "09b1fb7d-06ba-404d-9cdb-62183ff2b446")
+	)
+	(wire
+		(pts
+			(xy 207.01 144.78) (xy 207.01 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a75f2d8-d1bc-49b6-9afb-28b9cfd805b7")
 	)
 	(wire
 		(pts
@@ -1565,6 +1755,16 @@
 			(type default)
 		)
 		(uuid "13be2a3c-b367-4be0-a9ff-1c2b780782d1")
+	)
+	(wire
+		(pts
+			(xy 106.68 144.78) (xy 207.01 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16957cfa-93cd-4ceb-abfb-8f2b051f3892")
 	)
 	(wire
 		(pts
@@ -1615,6 +1815,16 @@
 			(type default)
 		)
 		(uuid "2ecfa72d-38ba-4db5-8959-92cd8f876ae9")
+	)
+	(wire
+		(pts
+			(xy 207.01 118.11) (xy 222.25 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "309b4a6a-bdcb-4108-b2ae-a7bfa241e779")
 	)
 	(wire
 		(pts
@@ -1728,6 +1938,26 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 107.95) (xy 96.52 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71d29f97-8810-4b9e-b489-91ef7bca355c")
+	)
+	(wire
+		(pts
+			(xy 210.82 80.01) (xy 166.37 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71e73c21-edad-4b01-94ba-d8456f2b07a4")
+	)
+	(wire
+		(pts
 			(xy 250.19 122.7638) (xy 222.25 122.7638)
 		)
 		(stroke
@@ -1758,6 +1988,26 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 100.33) (xy 106.68 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e8086bf-6e48-4399-b887-afd6a404210c")
+	)
+	(wire
+		(pts
+			(xy 96.52 67.31) (xy 96.52 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91ebc8fd-b5f9-4305-a937-8fee2572fcc9")
+	)
+	(wire
+		(pts
 			(xy 171.45 149.86) (xy 191.77 149.86)
 		)
 		(stroke
@@ -1778,7 +2028,27 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 105.41) (xy 222.25 122.7638)
+			(xy 222.25 118.11) (xy 222.25 122.7638)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7a50ede-bb30-423a-ae9b-96f6dda08fe3")
+	)
+	(wire
+		(pts
+			(xy 210.82 60.96) (xy 210.82 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bafd8451-6b87-403b-baf3-e0d63bdd0a6a")
+	)
+	(wire
+		(pts
+			(xy 222.25 105.41) (xy 222.25 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1815,6 +2085,26 @@
 			(type default)
 		)
 		(uuid "d0938b3e-5230-4cc8-8282-1b3d41500ec9")
+	)
+	(wire
+		(pts
+			(xy 106.68 95.25) (xy 119.38 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3ab8ac9-2e56-4451-9a8c-09b909375738")
+	)
+	(wire
+		(pts
+			(xy 119.38 95.25) (xy 119.38 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d49a0511-a0fe-41c8-91ee-6643f22c5a02")
 	)
 	(wire
 		(pts
@@ -1855,6 +2145,16 @@
 			(type default)
 		)
 		(uuid "e3535d56-80fa-44c7-96fe-6c75c0eff222")
+	)
+	(wire
+		(pts
+			(xy 119.38 60.96) (xy 210.82 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e459c185-0517-4229-a3f4-16bc80660f1b")
 	)
 	(wire
 		(pts
@@ -2268,6 +2568,253 @@
 		)
 	)
 	(symbol
+		(lib_id "Display_Graphic:ER_OLEDM0.91_1x-I2C")
+		(at 96.52 97.79 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c68acb6-162d-49dc-a0a4-a28ee9bb268f")
+		(property "Reference" "U3"
+			(at 87.63 96.5199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ER_OLEDM0.91_1x-I2C"
+			(at 87.63 99.0599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Display:ER_OLEDM0.91_1x-I2C"
+			(at 78.486 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.buydisplay.com/download/manual/ER-OLEDM0.91-1_Datasheet.pdf"
+			(at 53.848 112.522 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SSD1306 OLED module, 0.91 inch, 128x32, I2C"
+			(at 69.85 114.554 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a680d069-fb69-4890-80ae-b4a30b920e8c")
+		)
+		(pin "4"
+			(uuid "612ea863-a0f2-4b04-95b0-ad1e50f9b145")
+		)
+		(pin "3"
+			(uuid "d380903f-80a8-4b6e-9da7-f850a60b9d68")
+		)
+		(pin "1"
+			(uuid "401ab622-b2ba-4933-b5c7-c596c78207a0")
+		)
+		(instances
+			(project "weather-station"
+				(path "/f8923e13-0537-4a20-97cd-b4109264ef2e"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 96.52 67.31 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "87835978-eb0e-43bd-9a13-70585b223431")
+		(property "Reference" "#PWR03"
+			(at 96.52 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 96.52 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 96.52 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74957a71-5c6b-48ff-8137-bfa3389d2db6")
+		)
+		(instances
+			(project "weather-station"
+				(path "/f8923e13-0537-4a20-97cd-b4109264ef2e"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 96.52 132.08 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a32f58d-4071-4d7f-9c6f-9088f4b465d9")
+		(property "Reference" "#PWR04"
+			(at 96.52 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 96.52 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54453ec7-983c-4f4d-be3e-f686797b469d")
+		)
+		(instances
+			(project "weather-station"
+				(path "/f8923e13-0537-4a20-97cd-b4109264ef2e"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 175.26 55.88 0)
 		(unit 1)
@@ -2379,7 +2926,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 248.412 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -2461,7 +3008,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 248.412 88.9 90)
 			(hide yes)
 			(show_name no)
